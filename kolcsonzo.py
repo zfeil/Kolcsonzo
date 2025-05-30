@@ -104,15 +104,6 @@ class Autokolcsonzo:
     def hozzaad_auto(self, auto: Auto):
         self.autok.append(auto)
 
-#    def lemondas(self, rendszam: str, datum: str):
-#        for berles in self.berlesek:
-#            if berles.auto.rendszam == rendszam and berles.datum == datum:
-#                self.berlesek.remove(berles)
-#                print(f"Bérlés lemondva: {rendszam} ({datum})")
-#                return True
-#        print("Nincs ilyen bérlés.")
-#        return False
-
     def listaz_berlesek(self):
         if not self.berlesek:
             print("Nincs aktuális bérlés.")
